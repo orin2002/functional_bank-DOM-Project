@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Wedgets </title>
+    <!-- link for font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- link for bs -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .cs-f{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+   <div class="text-center cs-f">
+    <i class="fa-solid fa-building-columns"></i>
+   </div>
+    <h1 class="text-center py-2">জিবনে কি আছে মাইরি ব্যাংক থেকে টাকা খেয়ে দাও </h1>
+    <section>
+        <div class="container">
+            <div class="row gx-5 gy-4 py-5">
+                <div class="col-lg-4 ">
+                    <div class="bg-success py-4">
+                        <h2 class="text-center text-white ">DEPOSIT</h2>
+                        <h3 class="text-center text-white">$<span id="deposit-text">00</span></h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 ">
+                    <div class="bg-info py-4">
+                        <h2 class="text-center text-white ">WITHDRAW</h2>
+                        <h3 class="text-center text-white">$<span id="withdraw-main">00</span></h3>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg-warning py-4">
+                        <h2 class="text-center text-white ">BALANCE</h2>
+                        <h3 class="text-center text-white">$ <span id="main-account-balance">1200</span> </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- deposit section -->
+    <section>
+        <div class="container">
+            <div class="row py-5 gy-2">
+                <div class="col-lg-6 ">
+                    <div class="bg-info py-4">
+                        <h3 class="text-white text-center py-3">DEPOSIT HERE</h3>
+                        <div class="py-3">
+                            <input id="deposit-input" type="text" placeholder="DEPOSIT HERE" class="d-block w-75 mx-auto py-2">
+                        </div>
+                        <button id="deposit-btn" class="bg-dark px-3 py-2 text-white border-0 d-block mx-auto">Deposit</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-success py-4">
+                        <h3 class="text-white text-center py-3">WITHDRAW</h3>
+                        <div class="py-3">
+                            <input id="withdraw-input" type="text" placeholder="WITHDRAW HERE" class="d-block w-75 mx-auto py-2">
+                        </div>
+                        <button id="withdraw-btn" class="bg-dark px-3 py-2 text-white border-0 d-block mx-auto">WITHDRAW</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/banking.js"></script>
+</body>
+</html>
